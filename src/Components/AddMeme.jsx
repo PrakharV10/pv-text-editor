@@ -44,7 +44,7 @@ function AddMeme({ editor }) {
 
 	return (
 		<>
-			<button onClick={searchEditorContent} className='flex justify-center items-center mr-2'>
+			<button onClick={searchEditorContent} className='flex justify-center items-center mx-2'>
 				<MemeIcon />
 			</button>
 		</>

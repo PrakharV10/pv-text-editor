@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import RichTextEditorOptions from './RichTextEditorOptions';
@@ -13,6 +13,7 @@ import Highlight from '@tiptap/extension-highlight';
 import Text from '@tiptap/extension-text';
 import Image from '@tiptap/extension-image';
 import Dropcursor from '@tiptap/extension-dropcursor';
+import Guide from './Guide';
 
 function Editor() {
 	const editor = useEditor({
@@ -32,10 +33,17 @@ function Editor() {
 		],
 	});
 
+	const [isWriting, setIsWriting] = useState(true);
+
 	return (
 		<>
-			<RichTextEditorOptions editor={editor} />
-			<EditorContent editor={editor} />
+			<RichTextEditorOptions
+				editor={editor}
+				isWriting={isWriting}
+				setIsWriting={setIsWriting}
+			/>
+			{isWriting && <EditorContent editor={editor} />}
+			{!isWriting && <Guide />}
 		</>
 	);
 }

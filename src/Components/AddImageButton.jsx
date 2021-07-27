@@ -14,7 +14,7 @@ function AddImageButton({ editor }) {
 		<>
 			<button
 				onClick={() => setOpenModal(true)}
-				className='flex justify-center items-center mr-4'
+				className='flex justify-center items-center mx-2'
 			>
 				<ImageIcon />
 			</button>
