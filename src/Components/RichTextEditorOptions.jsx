@@ -4,7 +4,7 @@ import AddImageButton from './AddImageButton';
 import AddMeme from './AddMeme';
 import TextStyleButtons from './TextStyleButtons';
 
-function TextEditOptions({ editor }) {
+function RichTextEditorOptions({ editor }) {
 	return (
 		<div className='w-full bg-gray-100 px-2 py-2 my-8 font-logo text-lg rounded-sm border-1 flex justify-between items-center text-gray-700 border-gray-200'>
 			<div className='flex items-center'>
@@ -12,11 +12,11 @@ function TextEditOptions({ editor }) {
 				<AddHyperLink editor={editor} />
 			</div>
 			<div className='flex items-center'>
+				<AddImageButton editor={editor} />
 				<AddMeme />
-				<AddImageButton />
 			</div>
 		</div>
 	);
 }
 
-export default TextEditOptions;
+export default RichTextEditorOptions;

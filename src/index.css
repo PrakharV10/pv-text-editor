@@ -17,5 +17,11 @@
 	color: #969595;
 	pointer-events: none;
 	height: 0;
-	font-size: 1.3rem;
+}
+
+.ProseMirror img {
+	margin-top: 1rem;
+	max-width: 100%;
+	height: 25rem;
+	border-radius: 3px;
 }
