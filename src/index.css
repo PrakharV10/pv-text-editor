@@ -25,3 +25,9 @@
 	height: 25rem;
 	border-radius: 3px;
 }
+
+.ProseMirror a {
+	color: #1d4ed8;
+	text-decoration: underline;
+	cursor: pointer;
+}
