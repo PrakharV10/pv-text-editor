@@ -13,7 +13,7 @@ function RichTextEditorOptions({ editor }) {
 			</div>
 			<div className='flex items-center'>
 				<AddImageButton editor={editor} />
-				<AddMeme />
+				<AddMeme editor={editor} />
 			</div>
 		</div>
 	);

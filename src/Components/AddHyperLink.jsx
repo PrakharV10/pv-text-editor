@@ -22,7 +22,7 @@ function AddHyperLink({ editor }) {
 					<LinkIcon />
 				</span>
 			</button>
-			{editor.isActive('link') && (
+			{editor !== null && editor.isActive('link') && (
 				<button
 					onClick={() => {
 						editor.chain().focus().unsetLink().run();
