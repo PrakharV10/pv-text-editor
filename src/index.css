@@ -9,6 +9,9 @@ html {
 	font-size: 17px;
 }
 
+/**
+* ProseMirror Defines the styling of all the tags related to editor, as provided by the tip tap library.
+*/
 .ProseMirror {
 	min-height: 90vh;
 	padding: 1rem 0 3rem;

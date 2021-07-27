@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CloseIcon from '../Assets/Svg/CloseIcon';
 
+// Modal for adding Image and Hyper links.
 function Modal({ modalType, setOpenModal, modalOutput }) {
 	const [url, setUrl] = useState('');
 

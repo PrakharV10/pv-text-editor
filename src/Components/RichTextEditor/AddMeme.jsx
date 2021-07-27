@@ -1,10 +1,12 @@
 import axios from 'axios';
 import React from 'react';
-import MemeIcon from '../Assets/Svg/MemeIcon';
+import { MemeIcon } from '../../Assets';
 
+// This Component Defines the button which adds Memes
 function AddMeme({ editor }) {
 	const API_KEY = process.env.REACT_APP_API_KEY;
 
+	// Get Cat Image from the api
 	async function getCatImage(searchWord) {
 		try {
 			const {
@@ -19,6 +21,7 @@ function AddMeme({ editor }) {
 		}
 	}
 
+	// Search the content for {{cat_meme}} and replace it.
 	async function searchEditorContent() {
 		let editorContent = editor.getHTML();
 		let regexPattern = /\{\{(.+?)_meme\}\}/;
@@ -31,6 +34,7 @@ function AddMeme({ editor }) {
 		editor.commands.setContent(newContent);
 	}
 
+	// Adding the image url to html
 	async function addMemetoHTML(searchWord) {
 		const url = await getCatImage(searchWord);
 

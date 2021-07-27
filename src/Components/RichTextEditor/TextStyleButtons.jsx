@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This Component Defines the button which adds Bold, Italics, Underline and Strike in the respective order
 function TextStyleButtons({ editor }) {
 	return (
 		<>

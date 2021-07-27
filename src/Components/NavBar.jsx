@@ -1,5 +1,6 @@
 import React from 'react';
 
+// This defines the Nav bar.
 function NavBar() {
 	return (
 		<div className='w-full px-4 md:px-0 md:w-10/12 h-16 m-auto flex justify-between items-center border-b-2 border-gray-100'>

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import LinkIcon from '../Assets/Svg/LinkIcon';
-import UnlinkIcon from '../Assets/Svg/UnlinkIcon';
-import Modal from './Modal';
+import { LinkIcon, UnlinkIcon } from '../../Assets';
+import Modal from '../Modal';
 
+// This Component Defines the button which adds Hyperlink
 function AddHyperLink({ editor }) {
 	const [openModal, setOpenModal] = useState(false);
 

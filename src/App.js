@@ -1,5 +1,4 @@
-import Editor from './Components/Editor';
-import NavBar from './Components/NavBar';
+import { Editor, NavBar } from './Components';
 
 function App() {
 	return (

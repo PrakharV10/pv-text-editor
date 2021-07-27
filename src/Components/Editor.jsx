@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
-import RichTextEditorOptions from './RichTextEditorOptions';
+import RichTextEditorOptions from './RichTextEditor/RichTextEditorOptions';
 import Underline from '@tiptap/extension-underline';
 import Bold from '@tiptap/extension-bold';
 import Italic from '@tiptap/extension-italic';
@@ -15,24 +15,28 @@ import Image from '@tiptap/extension-image';
 import Dropcursor from '@tiptap/extension-dropcursor';
 import Guide from './Guide';
 
+const extensions = [
+	StarterKit,
+	Underline,
+	Bold,
+	Italic,
+	Strike,
+	Link,
+	Placeholder,
+	Typography,
+	Highlight,
+	Text,
+	Image,
+	Dropcursor,
+];
+
+// This creates the Writing (Editor Component).
 function Editor() {
 	const editor = useEditor({
-		extensions: [
-			StarterKit,
-			Underline,
-			Bold,
-			Italic,
-			Strike,
-			Link,
-			Placeholder,
-			Typography,
-			Highlight,
-			Text,
-			Image,
-			Dropcursor,
-		],
+		extensions,
 	});
 
+	// State to switch between Guide and preview
 	const [isWriting, setIsWriting] = useState(true);
 
 	return (

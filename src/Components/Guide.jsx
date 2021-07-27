@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Guide for using the Editor
 function Guide() {
 	return (
 		<div className='text-base pb-4 border-b-1 border-gray-200 mb-6'>
