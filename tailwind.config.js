@@ -8,7 +8,7 @@ module.exports = {
 			},
 			fontFamily: {
 				logo: ['Roboto Slab', 'serif'],
-				body: ['Poppins', 'sans-serif'],
+				body: ['Inter', 'sans-serif'],
 			},
 		},
 	},
